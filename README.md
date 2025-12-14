@@ -45,5 +45,29 @@ It was created using ASP.NET CORE in the MVC format.
 
 ![Rentalhistory Model W Properties For Db](rentalhistory-model-w-properties-for-db.PNG)
 
+#### Snippet 4 - 6: CSS styles for Create and Edit views 
 
+- These snippets showcase the CSS styles applied to the Create and Edit views of the RentalHistory entity.
+- They ensure a consistent and user-friendly layout, enhancing the overall user experience.
 
+![Creat Edit Page Css Styling Part One](creat-edit-page-css-styling-part-one.PNG)
+![Creat Edit Page Css Styling Part Two](creat-edit-page-css-styling-part-two.PNG)
+![Creat Edit Page Css Styling Part Three](creat-edit-page-css-styling-part-three.PNG)
+
+#### Snippet 7: jQuery code manipulating Damages Incurred label on Create page when Damaged box is checked
+
+- This jQuery code dynamically updates the label for the "Damages Incurred" field based on the state of the "Rental Damaged" checkbox.
+
+![Creat Edit Page Js Where Label Changes When Box Is Clicked](creat-edit-page-js-where-label-changes-when-box-is-clicked.PNG)
+
+#### Snippet 8 - 9: HTML employing Bootstrap and jQuery to style the Index view for RentalHistories
+
+- This is a Razor Page view (Index.cshtml) for displaying a list of Rental Histories in an ASP.NET Core application using Bootstrap 4 (evident from classes like mr-, btn-sm, etc.).
+- The page shows a list of recent rental history items in a clean, card-based layout.
+- It utilizes jQuery for dynamic interactions and enhancements.
+- Rows have a custom class hover-row to show action menus like ellipsis on hover.
+- Standard Bootstrap 4 styling for consistency
+- It's well-structured, maintainable, and follows common patterns for admin/dashboard lists in ASP.NET Core Razor Pages. The only minor note is the empty <select> — it’s set up for future sorting options.
+
+![Index View Using Bootstrap To List Rental History Entrys Part One](index-view-using-bootstrap-to-list-rental-history-entrys-part-one.PNG)
+![Index View Using Bootstrap And J Query To List Rental History Entrys Part Two](index-view-using-bootstrap-and-jQuery-to-list-rental-history-entrys-part-two.PNG)
