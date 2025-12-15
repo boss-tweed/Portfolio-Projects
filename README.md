@@ -16,8 +16,7 @@ It was created using ASP.NET CORE in the MVC format.
 
 #### Snippet 1: JavaScript Code for intro story into project
 
-- This code is of JavaScript designed to dynamically update a displayed count of names 
-(specifically, the number of <p> elements) inside a container on a webpage. 
+- This code is of JavaScript designed to dynamically update a displayed count of names (specifically, the number of parapragh tags) inside a container on a webpage. 
 - It is particularly on what appears to be a "sign-in" or "home" page. 
 - It ensures the count is updated at the appropriate time during page loading.
 
@@ -67,7 +66,7 @@ It was created using ASP.NET CORE in the MVC format.
 - It utilizes jQuery for dynamic interactions and enhancements.
 - Rows have a custom class hover-row to show action menus like ellipsis on hover.
 - Standard Bootstrap 4 styling for consistency
-- It's well-structured, maintainable, and follows common patterns for admin/dashboard lists in ASP.NET Core Razor Pages. The only minor note is the empty <select> — it’s set up for future sorting options.
+- It's well-structured, maintainable, and follows common patterns for admin/dashboard lists in ASP.NET Core Razor Pages. The only minor note is the empty select tag is set up for future sorting options, not actually implemented.
 
 ![Index View Using Bootstrap To List Rental History Entrys Part One](index-view-using-bootstrap-to-list-rental-history-entrys-part-one.PNG)
 ![Index View Using Bootstrap And J Query To List Rental History Entrys Part Two](index-view-using-bootstrap-and-jQuery-to-list-rental-history-entrys-part-two.PNG)
