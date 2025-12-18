@@ -70,3 +70,24 @@ It was created using ASP.NET CORE in the MVC format.
 
 ![Index View Using Bootstrap To List Rental History Entrys Part One](index-view-using-bootstrap-to-list-rental-history-entrys-part-one.PNG)
 ![Index View Using Bootstrap And J Query To List Rental History Entrys Part Two](index-view-using-bootstrap-and-jQuery-to-list-rental-history-entrys-part-two.PNG)
+
+#### Snippet 10: jQuery code to give sorting functionality on Index view
+
+- This JavaScript/jQuery code implements client-side sorting for the list on the Index page. It allows users to reorder the visible list items instantly (without a page refresh) based on selections from the "Sorted by" dropdown (#sort).
+
+![Jquery Code To Give Functionality To Sort Options On Index Page](jquery-code-to-give-functionality-to-sort-options-on-index-page.PNG)
+
+#### Snippets 11 - 14: Controller w/ scaffolding and Entity Model for database
+
+- This C# code snippet is from an ASP.NET Core MVC controller named RentalPhotosController, for a content management system for a theater.
+- It's located in the Areas.Rent.Controllers namespace, indicating it's organized under an "Rent" area for modular routing (e.g., URLs like /Rent/RentalPhotos).
+- The controller handles CRUD (Create, Read, Update, Delete) operations for entities related to "Rental Photos".
+
+- The other snippet is of code that defines an Entity Framework (EF) model class named RentalPhoto within the TheatreCMS3.Areas.Rent.Models namespace.
+- This class represents a database entity for storing information about photos related to rented items (e.g., props, costumes, or rooms), likely for documenting conditions like damage during rentals.
+- The model is designed for use with Entity Framework (likely EF6 or EF Core, based on the attributes), mapping to a SQL table named "RentalPhotos".
+
+![Rental Photo Controller Part One](rental-photo-controller-part-one.PNG)
+![Rental Photo Controller Part Two](rental-photo-controller-part-two.PNG)
+![Rental Photo Controller Part Three](rental-photo-controller-part-three.PNG)
+![Rental Photo Entity Model For Db](rental-photo-entity-model-for-db.PNG)
