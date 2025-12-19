@@ -91,3 +91,28 @@ It was created using ASP.NET CORE in the MVC format.
 ![Rental Photo Controller Part Two](rental-photo-controller-part-two.PNG)
 ![Rental Photo Controller Part Three](rental-photo-controller-part-three.PNG)
 ![Rental Photo Entity Model For Db](rental-photo-entity-model-for-db.PNG)
+
+#### Snippets 15 - 19: Controller method for image uploadand converts to byte, uses photo ID to retrieve. File input field in CRUD pages
+
+- This code snippet is the POST Create action in an ASP.NET MVC 5 project (classic MVC, not Core).
+- It handles form submission for creating a new RentalPhoto record, with the key feature being proper handling of an uploaded image file, converting it to a byte[] for storage in the database.
+
+- The next code snippet is a well-structured POST Edit action in the RentalPhotosController (ASP.NET MVC 5) that safely handles photo updates during editing.
+- It first loads the existing RentalPhoto entity from the database to preserve the current image bytes if no new file is uploaded, preventing accidental overwriting with null.
+- It then updates scalar properties (name, damaged status, details) from the posted model.
+- When a new photo is provided via HttpPostedFileBase uploadPhoto, it performs robust validation—checking for valid image MIME types (JPEG, PNG, GIF) and enforcing a 5 MB size limit—before converting the uploaded file stream to a byte[] using BinaryReader.
+
+- After that, This code defines a dedicated Photo action in the RentalPhotosController (ASP.NET MVC 5) to securely serve stored image data as a file response.
+- It retrieves a RentalPhoto entity by ID, returns a 404 if not found, and a 204 No Content if the image byte array is null or empty.
+- For valid image data, it determines the correct MIME type by inspecting the byte array's magic numbers (file signature).
+
+- The last two snippets following represents a standard Bootstrap-formatted file upload input field within a form group, typically used in an ASP.NET MVC view (e.g., Create or Edit pages for the RentalPhoto model).
+- It features a label styled with custom-control-label and Bootstrap grid classes (col-md-2) for alignment, paired with a file input in a col-md-10 column.
+- The input type="file" element is named "uploadPhoto" to match the corresponding HttpPostedFileBase parameter in the controller, restricts uploads to image files via accept="image/*", and is marked as required to enforce selection.
+- The last snippet also conditionally displays the current uploaded photo while providing an upload field for a new one.
+
+![Method W Parameter For Img Upload Converts To Byte Part One](method-w-parameter-for-img-upload-converts-to-byte-part-one.PNG)
+![Method W Parameter For Img Upload Converts To Byte Part Two](method-w-parameter-for-img-upload-converts-to-byte-part-two.PNG)
+![Method Takes Photo Id Uses To Find Photo Gets Stored Byte Returns](method-takes-photo-id-uses-to-find-photo-gets-stored-byte-returns.PNG)
+![File Input Field In Views To Upload Img Part One](file-input-field-in-views-to-upload-img-part-one.PNG)
+![File Input Field In Views To Upload Img Part Two](file-input-field-in-views-to-upload-img-part-two.PNG)
